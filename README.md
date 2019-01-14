@@ -14,7 +14,7 @@ GOTURN implementation with Keras
 モデルを作成して学習を実行します。初回はMobilenetV2のimagenet重みのダウンロードが入ります。  
 また、models以下に"model_goturn_XXXXXXXX.h5"がある場合(XXXXXXXXはepoch数)には、  
 それを読み込んで続きから学習を再開します。  
-画像の入力のさせ方については tools/vocutil.py を参照ください。
+画像の入力のさせ方については tools/votutil.py を参照ください。
 - predict.py  
 VOT Challangeのフレーム画像ディレクトリを対象とし、全フレームに対して予測結果を書きだします。  
 各フレームではあくまで正解データをもとに入力を行っているため、トラッキングとして実験をする際には2フレーム目以降は検出結果をもとに入力範囲を切り出してやる必要があります。  
