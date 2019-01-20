@@ -45,6 +45,10 @@ Kerasのモデルで全部込みで1.7GBある(optimizer等込み)。どこが�
 3. BoundingBoxの推定分を変えたい  
 Faster RCNNをはじめとするRegion Proposal Netを使った方が良いのではという考え。  
 多分別の論文があるので要調査。
+→ECCV2018等の発表を見るに最近はかなり高精度、高速なSiam系のモデルがある。  
+そっちの方が良いかも  
+[DaSiamRPN](https://github.com/foolwood/DaSiamRPN) : かなり高精度で1080程度のGPUで200FPSとか出る感じ。  
+3FPSぐらいでSemanticなモデルもあるし。ここにきてObject Trackingはかなり進んだ感じ。  
 
 # 実行環境
 実行環境は以下。詳細は余計なものもありますがPipfile(misc以下)を見てください。  
