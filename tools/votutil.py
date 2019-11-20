@@ -147,8 +147,8 @@ def calcSearchArea(bbox, img_size, search_rate=0.8):
         offset_y = -crop_area[1]
     elif crop_area[3] > height:
         offset_y = height - crop_area[3]
-    crop_area[1] += int(crop_area[1] + offset_y)
-    crop_area[3] += int(crop_area[3] + offset_y)
+    crop_area[1] = int(crop_area[1] + offset_y)
+    crop_area[3] = int(crop_area[3] + offset_y)
     # ずらしてもはみ出るならばクロップ
     if crop_area[0] < 0:
         crop_area[0] = 0
